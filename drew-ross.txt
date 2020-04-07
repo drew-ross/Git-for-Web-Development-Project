@@ -92,7 +92,15 @@ https://codepen.io/drewross/pen/VwvZwoV?editors=1100
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        A: Inline elements can display on the same line and take up as much space as needed. Multiple inline elements can occupy the same line. Block elements take an entire line by themselves and occupy individual lines.
+    2. What happens when an element is positioned absolutely?
+        A: an absolute position will position an element relative to its parent element, if the parent element position is not static.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+        display: inline-block;
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        block: div, h1, p
+        inline: span, a
+        inline-block: img
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+        A: The box model is how every HTML element is displayed on a screen. Every element takes up a certain amount of space, then around the element is a layer of padding to give the element space. The border goes around the padding and can be styled. The margin goes around the border and gives the border space from all surrounding elements.
+            The fix for the box model is to use box-sizing: border-box;
