@@ -1,44 +1,94 @@
 Completed codepen:
 https://codepen.io/drewross/pen/VwvZwoV?editors=1100
 
-    1. What is Semantic HTML? 
+    1. What is Semantic HTML?
+        A: Semantic HTML adds meaning to the information on a page. 
     2. What is HTML used for? 
+        A: HTML is used to construct the foundation of web pages.
     3. What is an attribute and where do we put it? 
+        A: An attribute adds more functionality to an HTML element. The attribute is placed in the opening tag of an element.
     4. What is the h1 tag used for? How many times should I use it on a page?
+        A: The h1 tag is used for the main heading/title of the page and should be used only once per page.
     5. Name two tags that have required attributes
+        1: The <a> tag requires href=""
+        2: the <img> tag requires src=""
     6. What do we put in the head of our HTML document? 
-    7. What is an id? 
-    8. What elements can I add an id to? 
+        A: The <head> is for metadata which is not displayed on the page itself.
+    7. What is an id?
+        A: A unique identifier for a tag, allowing the tag to be specifically targeted.
+    8. What elements can I add an id to?
+        A: Any element can have an id tag
     9. How many times can I use the same id on a page? 
-    10. What is a class? 
-    11. What elements can I add a class to? 
-    12. How many times can I use the same class on a page? 
+        A: Only once. An id is meant to be unique.
+    10. What is a class?
+        A: A class is an identifier that can be used for multiple tags.
+    11. What elements can I add a class to?
+        A: Any elements.
+    12. How many times can I use the same class on a page?
+        A: Unlimited.
     13. How do I get my link to open in a new tab?
-    14. What is the alt attribute in the image tag used for? 
+        A: Add the target="_blank" attribute to <a>
+    14. What is the alt attribute in the image tag used for?
+        A: If an image can't load, or for accessibility purposes, the alt attribute can add a description of the image so the user understands what's supposed to be on the page.
     15. How do I reference an id?
+        A: #idname
     16. What is the difference between a section and a div
-    17. What is CSS used for? 
+        A: A <section> is a semantic way of dividing parts of the page, a <div> is nonsemantic way to divide and style parts of the page and can be used more generally to help with formatting.
+    17. What is CSS used for?
+        A: CSS is used to add style and layout to a page.
     18. How to we select an element? Example - every h2 on the page
+        h2 {}
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        A: An id is meant to be used once and a class is meant to be used as many times as needed. An id could be used for a unique section of the page which requires different CSS styling than other parts of the page, such as the login at the top of a page. A class could be used on multiple parts of a page, such as each <section> on the page where the CSS styling needs to apply to every <section>.
     20. How do we select classes in CSS?
+        .classname {}
     21. How do we select a p element with a single class of “human””?
-    22. What is a parent child selector? When would this be useful? 
+        p.human {}
+    22. What is a parent child selector? When would this be useful?
+        element child {} *selects any descendant "child"
+        OR
+        element > child {} *selects direct descendant "child"
+        These are useful for selecting a child only if it's a descendant of the parent element. This can be used, for example, to select any <p> with a specific function (if it's inside say, a div) rather than selecting all <p> elements on a page.
     23. How do you select all links within a div with the class of sidebar?
+        div.sidebar a {}
     24. What is a pseudo selector?
+        A: a pseudo selector selects a pseudo class, which is an element in a specific state. For example, a:hover selects <a> elements only while the mouse is hovering over that element.
     25. What do we use the change the spacing between lines?
+        {line-height: value;}
     26. What do we use to change the spacing between letters?
+        {letter-spacing: value;}
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        {text-transform: uppercase;}
+        {text-transform: lowercase;}
+        {text-transform: capitalize;}
     28. How do I add a 1px border around my div that is dotted and black?
+        div {border: 1px dotted black;}
     29. How do I select everything on the page? 
+        * {}
     30. How do I write a comment in CSS?
-    31. How do I find out what file I am in, when I am using the command line? 
+        /* Comments are written like this */
+    31. How do I find out what file I am in, when I am using the command line?
+        pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    34. Why should I use version control? 
+        rm filename
+        A: This will delete a file without conformation and without a chance to recover from the recycle bin.
+    34. Why should I use version control?
+        A: Version control is really useful for keeping backups of all working versions of a project in order to safeguard against product-breaking bugs and other accidents. It also helps teams work together and organize a project. With version control, you can try different routes to solve a problem and always go back to a previous version if needed, or create different branches of a project.
     35. How often should I commit to github?
+        A: After meaninful changes are made to a project, say every 15-30 minutes depending on progress.
     36. What is the command we would use to push our repo up to github? 
+        git push -u origin branchname
     37. Walk me through Lambda's git flow. 
-
+        1: Locate and fork the LambdaSchool master on GitHub. You now have a copy, which is your own master branch.
+        2: Clone the forked copy. This will download the repo to your computer.
+        3: Create a new branch of firstname-lastname. This will be the branch you work on.
+        3: Make changes and save.
+        4: Stage and commit changes. This will update your local git repo with a new snapshot of your work.
+        5: Push changes to your firstname-lastname branch. This will create a new branch on GitHub with your firstname-lastname, or update that branch with new commits.
+        6: Repeat 3-5 until ready to merge all changes with your master branch (not the LambdaSchool master branch).
+        7: Create a pull request on your master branch when ready to merge all changes. Be sure to have your TL/PM as a collaborator and reviewer.
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
